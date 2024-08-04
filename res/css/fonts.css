@@ -1,0 +1,43 @@
+.cabin-regular,
+a, p, ol, table {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+}
+
+.cabin-bold {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-variation-settings: "wdth" 100;
+}
+
+.cabin-condensed-regular,
+h2 {
+    font-family: "Cabin Condensed", sans-serif;
+    font-weight: 400;
+}
+
+.cabin-condensed-medium {
+    font-family: "Cabin Condensed", sans-serif;
+    font-weight: 500;
+}
+
+.cabin-condensed-semibold,
+h1 {
+    font-family: "Cabin Condensed", sans-serif;
+    font-weight: 600;
+}
+
+.cabin-condensed-bold {
+    font-family: "Cabin Condensed", sans-serif;
+    font-weight: 700;
+}
+
+.noto-emoji {
+    font-family: "Noto Emoji", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
