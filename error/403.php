@@ -22,9 +22,9 @@
         <link rel="stylesheet" href="../res/css/fonts.css">
     </head>
 
-    <body>
+    <body class="error">
         <header class="fixed">
-            <a href="#welcome"><img class="logo" src="../res/svg/wiyt.svg" alt="Wiyt"/></a>
+            <a href="../"><img class="logo" src="../res/svg/wiyt.svg" alt="Wiyt"/></a>
             <span class="links">
                 <a class="link" href="https://www.youtube.com/@Wiyt">
                     <img src="../res/svg/youtube.svg" alt="YouTube"/>
@@ -38,7 +38,7 @@
             </span>
         </header>
 
-        <main>
+        <main class="error">
             <article>
                 <section>
                     <h2>Error 403</h2>
@@ -48,6 +48,7 @@
                     <p>Unfortunately, you stumbled across a page you might not have known about or maybe did and tried to get into it to no avail. Do not fret, as I have to commend you on your resilience.</p>
                     <p>You are extremely crafty.</p>
                 </section>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <section>

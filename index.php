@@ -26,7 +26,7 @@
 
     <body>
         <header class="fixed">
-            <a href="/"><img class="logo" src="res/svg/wiyt.svg" alt="Wiyt"/></a>
+            <a href="#welcome"><img class="logo" src="res/svg/wiyt.svg" alt="Wiyt"/></a>
             <span class="links">
                 <a class="link" href="https://www.youtube.com/@Wiyt">
                     <img src="res/svg/youtube.svg" alt="YouTube"/>
@@ -43,14 +43,11 @@
         <main id="welcome">
             <article>
                 <section>
-                    <p>
-                        Welcome to my website and thanks for visiting!
-                        <br>I'm <b>Wiyt</b>; I'm known online for editing videos, streaming and programming, but I have much experience in many other fields as well.
-                        <br>I mainly use this space as a hub for my YouTube and streaming content and for writing about myself.
-                        <br>Visit any of the quick links below to get started and learn more about me.
-                    </p>
+                    <p>Welcome to my website and thanks for visiting!</p>
+                    <p>I'm <b>Wiyt</b>; I'm known online for editing videos, streaming and programming, but I have much experience in many other fields as well.<br>I mainly use this space as a hub for my YouTube and streaming content and for writing about myself.</p>
+                    <p>Visit any of the quick links below to get started and learn more about me.</p>
                     <span class="page"><a id="banner-biography" href="biography/"><div class="tile"><p>Biography</p></div></a></span>
-                    <span class="page"><a id="banner-designs" href="projects-and-designs/"><div class="tile"><p>Projects & Designs</p></div></a></span>
+                    <span class="page"><a id="banner-designs" href="projects/"><div class="tile"><p>Projects</p></div></a></span>
                     <span class="page"><a id="banner-stream" href="stream/"><div class="tile"><p>Stream</p></div></a></span>
                 </section>
                 <section>

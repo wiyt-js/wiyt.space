@@ -24,7 +24,7 @@
 
     <body>
         <header class="fixed">
-            <a href="#welcome"><img class="logo" src="../res/svg/wiyt.svg" alt="Wiyt"/></a>
+            <a href="../"><img class="logo" src="../res/svg/wiyt.svg" alt="Wiyt"/></a>
             <span class="links">
                 <a class="link" href="https://www.youtube.com/@Wiyt">
                     <img src="../res/svg/youtube.svg" alt="YouTube"/>
@@ -48,6 +48,7 @@
                     <p>Unfortunately, you stumbled across a page you might not have known about or maybe did and tried to get into it to no avail. Do not fret, as I have to commend you on your resilience.</p>
                     <p>You are extremely crafty.</p>
                 </section>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <section>

@@ -1,5 +1,3 @@
-document.getElementById('mishy-bgm').volume = 0.5;
-
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/player_api";
 var tagScriptFirst = document.getElementsByTagName('script')[0];
