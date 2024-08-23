@@ -1,0 +1,5 @@
+.git/
+.vscode/
+res/img/model/
+db-sys.php
+.htaccess

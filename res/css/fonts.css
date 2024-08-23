@@ -1,5 +1,5 @@
 .cabin-regular,
-a, p, ol, table {
+a, p, ol, ul, table {
     font-family: "Cabin", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -14,7 +14,7 @@ a, p, ol, table {
 }
 
 .cabin-condensed-regular,
-h2 {
+h2, h3 {
     font-family: "Cabin Condensed", sans-serif;
     font-weight: 400;
 }
@@ -30,7 +30,8 @@ h1 {
     font-weight: 600;
 }
 
-.cabin-condensed-bold {
+.cabin-condensed-bold,
+h4 {
     font-family: "Cabin Condensed", sans-serif;
     font-weight: 700;
 }
@@ -40,4 +41,4 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-  }
+}
