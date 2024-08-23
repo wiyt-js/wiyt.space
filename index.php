@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<?php require_once('sql/db-sys.php');
+?><!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">

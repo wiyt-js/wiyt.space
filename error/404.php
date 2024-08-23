@@ -44,6 +44,16 @@
                     <h2>Error 404</h2>
                     <p>Not Found</p>
                 </section>
+                <section>
+                    <p>Unfortunately, you stumbled across a page you might not have known about or maybe did and tried to get into it to no avail. Do not fret, as I have to commend you on your resilience.</p>
+                    <p>You are extremely crafty.</p>
+                </section>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <section>
+                    <p>Run along now...</p>
+                    <p>&#128539;</p>
+                </section>
             </article>
         </main>
 
