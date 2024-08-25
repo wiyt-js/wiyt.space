@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="../res/css/fonts.css">
     </head>
 
-    <body>
+    <body class="error">
         <header class="fixed">
             <a href="../"><img class="logo" src="../res/svg/wiyt.svg" alt="Wiyt"/></a>
             <span class="links">
@@ -38,22 +38,20 @@
             </span>
         </header>
 
-        <main>
+        <main class="error">
             <article>
                 <section>
-                    <h2>Error 404</h2>
-                    <p>Not Found</p>
-                </section>
-                <section>
+                    <h2 style="text-align:center;">Error 404 (Not Found)</h2>
                     <p>Unfortunately, you stumbled across a page you might not have known about or maybe did and tried to get into it to no avail. Do not fret, as I have to commend you on your resilience.</p>
-                    <p>You are extremely crafty.</p>
+                    <p>You are extremely crafty and keen.</p>
+                    <p style="text-align:right;">-Wiyt</p>
                 </section>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <section>
-                    <p>Run along now...</p>
-                    <p>&#128539;</p>
+                    <h4 style="text-align:right;">See You Space<br>Cowboy...</h4>
                 </section>
             </article>
         </main>

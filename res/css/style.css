@@ -30,6 +30,9 @@ body {
     color: var(--color-text-main);
     font-size: 18px;
 }
+body.error {
+    overflow: hidden;
+}
 section {
     text-align: center;
     padding-bottom: 4em;

@@ -7,8 +7,8 @@
         <meta content="Wiyt" name="author">
         <meta content="Video editor, streamer and programmer" name="description"/>
 
-        <title>Wiyt - 403</title>
-        <meta content="Wiyt - 403" property="og:title"/>
+        <title>Wiyt - 404</title>
+        <meta content="Wiyt - 404" property="og:title"/>
         <meta content="Video editor, streamer and programmer" property="og:description"/>
         <meta content="https://wiyt.space.com/" property="og:url"/>
         <meta content="website" property="og:type"/>
@@ -41,19 +41,17 @@
         <main class="error">
             <article>
                 <section>
-                    <h2>Error 403</h2>
-                    <p>Forbidden</p>
-                </section>
-                <section>
+                    <h2 style="text-align:center;">Error 403 (Forbidden)</h2>
                     <p>Unfortunately, you stumbled across a page you might not have known about or maybe did and tried to get into it to no avail. Do not fret, as I have to commend you on your resilience.</p>
-                    <p>You are extremely crafty.</p>
+                    <p>You are extremely crafty and keen.</p>
+                    <p style="text-align:right;">-Wiyt</p>
                 </section>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <section>
-                    <p>Run along now...</p>
-                    <p>&#128539;</p>
+                    <h4 style="text-align:right;">See You Space<br>Cowboy...</h4>
                 </section>
             </article>
         </main>
