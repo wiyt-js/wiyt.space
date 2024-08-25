@@ -37,6 +37,9 @@
                 <a class="link" href="https://soundcloud.com/wiyt">
                     <img src="res/svg/soundcloud.svg" alt="SoundCloud"/>
                 </a>
+                <a class="link" href="https://twitch.tv/wiyt_js">
+                    <img src="res/svg/twitch.svg" alt="Twitch"/>
+                </a>
             </span>
         </header>
 
