@@ -46,6 +46,8 @@
         <main id="welcome">
             <article>
                 <section>
+                    <h2>Latest Upload</h2>
+                    <iframe width="100%" src="https://www.youtube.com/embed/wv2R-NZmmjs" title="" frameBorder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen></iframe>
                     <p>Welcome to my website and thanks for visiting!</p>
                     <p>I'm <b>Wiyt</b>; I'm known online for editing videos, streaming and programming, but I have much experience in many other fields as well.<br>I mainly use this space as a hub for my YouTube and streaming content and for writing about myself.</p>
                     <p>Visit any of the quick links below to get started and learn more about me.</p>
