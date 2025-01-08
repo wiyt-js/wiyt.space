@@ -286,6 +286,8 @@ header img.logo {
     height: 100%;
     transition: all 1s ease;
     transform: rotate(0) scale3d(1, 1, 1);
+    opacity: 1;
+    visibility: visible;
 }
 header img.logo:hover {
     transform: rotate(-10deg) scale3d(1.5, 1.5, 1.5);
@@ -395,9 +397,6 @@ video#meta-client {
     body {
         font-size: 16px;
     }
-    header span.links, h1 {
-        display: none;
-    }
     h2 {
         text-align: center;
         overflow: hidden;
@@ -405,10 +404,16 @@ video#meta-client {
     h4 {
         text-indent: 0em;
     }
+    h1 {
+        display: none;
+    }
+    header span.links {
+        justify-content: center;
+        align-content: center;
+    }
     header img.logo {
-        text-align: center;
-        width: 100%;
-        max-width: 100%;
+        opacity: 0;
+        visibility: hidden;
     }
     div.mishy-container {
         margin: 0 0 20px 0;

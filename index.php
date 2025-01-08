@@ -67,7 +67,7 @@
                         $result = mysqli_query($connection, $sql);
                         if(mysqli_num_rows($result) > 0) {
                             while($row = mysqli_fetch_assoc($result)) {
-                                echo "<li id=\"" . $row['WatchID'] . "\">" . $row['TitleB64'] . "</li>";
+                                echo "<li id=\"" . $row['WatchID'] . "\">" . base64_decode($row['TitleB64']) . "</li>";
                             }
                         } else { echo "<p>No videos found.</p>"; }
                         mysqli_close($connection);
