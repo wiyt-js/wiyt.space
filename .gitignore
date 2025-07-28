@@ -1,5 +1,5 @@
 .git/
 .vscode/
-res/img/model/
+sql/
 db-sys.php
 .htaccess
