@@ -37,22 +37,9 @@ function stopVideo() {
     player.stopVideo();
 }
 
-function b64Encode(str) {
-    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g,
-        function toSolidBytes(match, p1) {
-            return String.fromCharCode('0x' + p1);
-    }));
-}
-
-function b64Decode(str) {
-    return decodeURIComponent(atob(str).split('').map(function(c) {
-        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-    }).join(''));
-}
-
 document.querySelectorAll('#video-list > li').forEach(element => {
     element.addEventListener("click", function() {
-        if(player.getVideoData()['video_id'] != element.id) {
+        if(this.player.videoData['video_id'] != element.id) {
             player.loadVideoById(element.id);
             document.getElementById('player').style.display = "block";
             document.getElementById('videos').scrollIntoView({
