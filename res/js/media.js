@@ -39,7 +39,7 @@ function stopVideo() {
 
 document.querySelectorAll('#video-list > li').forEach(element => {
     element.addEventListener("click", function() {
-        if(player.j.videoData['video_id'] != element.id) {
+        if(player) {
             player.loadVideoById(element.id);
             document.getElementById('player').style.display = "block";
             document.getElementById('videos').scrollIntoView({
@@ -48,3 +48,9 @@ document.querySelectorAll('#video-list > li').forEach(element => {
         }
     });
 });
+
+function playNewVideo(videoId) {
+    if (player) {
+        player.loadVideoById(videoId);
+    }
+}
