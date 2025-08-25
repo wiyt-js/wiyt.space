@@ -132,15 +132,17 @@ ol#video-list {
     padding: 0;
     list-style-type: none;
     cursor: pointer;
+    text-align: center;
 }
 #video-list li {
     padding: 0.5em 0;
     overflow: hidden;
-    transition: all 0.5s ease;
+    transition: all 1.0s ease;
 }
 #video-list li:hover {
     padding: 1.5em 0;
     background-color: rgba(240, 10, 20, 0.3);
+    transition: all 0.5s ease;
 }
 
 /* Blog styling */
@@ -385,7 +387,7 @@ video#meta-client {
 
 /* Screen check adjustments (@media) */
 @media only screen and (max-width: 680px) {
-    span.pages a {
+    span.page a {
         width: 100%;
     }
     main, header, article {
