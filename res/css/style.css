@@ -394,7 +394,7 @@ video#meta-client {
     body {
         font-size: 14px;
         padding: 0 16px 0 16px;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     h2 {
         text-align: center;
