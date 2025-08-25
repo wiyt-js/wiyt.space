@@ -215,9 +215,20 @@ div#jobs p {
     margin: 0;
     padding-bottom: 2em;
 }
+div#indent {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2px;
+}
 div#indent h4 {
     font-size: 24px;
     padding-top: 1em;
+}
+div#indent li {
+    list-style-type: none;
+}
+div#video-title {
+    padding-bottom: 1.5em;
 }
 
 /* Text header styling */
@@ -240,7 +251,7 @@ section div:hover h1 {
     opacity: 0.4;
 }
 h2 {
-    font-size: 32px;
+    font-size: 38px;
 }
 h3 {
     font-size: 14px;
@@ -367,7 +378,9 @@ audio {
 
 /* Video controls styling */
 video#meta-client {
-    width: 80%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
     transition: width 1s ease;
 }
 
@@ -387,6 +400,9 @@ video#meta-client {
 
 /* Screen check adjustments (@media) */
 @media only screen and (max-width: 680px) {
+    div#indent {
+        grid-template-columns: auto auto;
+    }
     span.page a {
         width: 100%;
     }
@@ -424,6 +440,12 @@ video#meta-client {
         width: 100%;
     }
     video#meta-client {
-        width: 100%;
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    div#indent {
+        grid-template-columns: auto;
     }
 }
