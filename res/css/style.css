@@ -120,9 +120,8 @@ iframe {
     height: 100%;
     max-width: var(--width-page-max);
 }
-#player {
-    display: none;
-}
+/* #ytplayer {
+} */
 
 /* Lists styling */
 ul {

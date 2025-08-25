@@ -3,12 +3,11 @@ tag.src = "https://www.youtube.com/player_api";
 var tagScriptFirst = document.getElementsByTagName('script')[0];
 tagScriptFirst.parentNode.insertBefore(tag, tagScriptFirst);
 
-var current_video_id;
 var player;
 var stopPlayAt = 10, stopPlayTimer;
 function onYouTubePlayerAPIReady() {
-    player = new YT.Player('player', {
-        videoId: current_video_id,
+    player = new YT.Player('ytplayer', {
+        videoId: 'wv2R-NZmmjs',
         events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
