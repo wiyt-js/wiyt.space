@@ -94,8 +94,8 @@ div#mishy-credits {
     text-align: center;
 }
 
-/* Button styling */
-a.silk-button {
+/* Link styling */
+a.silk-link {
     background-color: rgba(50, 50, 50, 0.25);
     border: rgba(50, 50, 50, 0.5) 1px solid;
     border-radius: 10px;
@@ -110,11 +110,11 @@ a.silk-button {
     text-decoration: none;
     transition: all 0.5s ease;
 }
-a.silk-button:hover, a.silk-button:active {
+a.silk-link:hover, a.silk-link:active {
     background-color: rgba(50, 50, 50, 0.5);
     border: rgba(50, 50, 50, 0.75) 1px solid;
 }
-a.silk-button img {
+a.silk-link img {
     width: 20px;
     height: 20px;
     max-width: 20px;
