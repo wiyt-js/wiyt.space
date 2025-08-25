@@ -27,6 +27,8 @@
 
 /* Body, Section styling */
 body {
+    padding: 0;
+    margin: 0;
     background-color: var(--color-background-main);
     color: var(--color-text-main);
     font-size: 18px;
