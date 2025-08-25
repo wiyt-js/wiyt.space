@@ -90,6 +90,9 @@ img.mishy-logo:hover {
     animation: wiggle 3.0s ease-in-out;
     animation-iteration-count: infinite;
 }
+div#mishy-credits {
+    text-align: center;
+}
 
 /* Button styling */
 a.silk-button {
