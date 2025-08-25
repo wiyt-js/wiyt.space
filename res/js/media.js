@@ -46,9 +46,3 @@ document.querySelectorAll('#video-list > li').forEach(element => {
         });
     });
 });
-
-function playNewVideo(videoId) {
-    if (player) {
-        player.loadVideoById(videoId);
-    }
-}
