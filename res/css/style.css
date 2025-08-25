@@ -110,7 +110,10 @@ a.silk-button:hover, a.silk-button:active {
     border: rgba(50, 50, 50, 0.75) 1px solid;
 }
 a.silk-button img {
+    width: 20px;
     height: 20px;
+    max-width: 20px;
+    max-height: 20px;
     object-position: 0 2px;
     margin-right: 10px;
 }
