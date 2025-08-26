@@ -8,7 +8,6 @@ var watchId = '';
 var stopPlayAt = 10, stopPlayTimer;
 function onYouTubePlayerAPIReady() {
     player = new YT.Player('ytplayer', {
-        videoId: watchId,
         events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
@@ -44,7 +43,7 @@ document.querySelectorAll('#video-list > li').forEach(element => {
         }
         if(watchId !== element.id) {
             watchId = element.id;
-            player.loadVideoById(element.id);
+            player.loadVideoById(watchId);
             document.getElementById('videos').scrollIntoView({
                 behavior: "smooth"
             });
