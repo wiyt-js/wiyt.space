@@ -4,10 +4,11 @@ var tagScriptFirst = document.getElementsByTagName('script')[0];
 tagScriptFirst.parentNode.insertBefore(tag, tagScriptFirst);
 
 var player;
+var watchId = '';
 var stopPlayAt = 10, stopPlayTimer;
 function onYouTubePlayerAPIReady() {
     player = new YT.Player('ytplayer', {
-        videoId: 'wv2R-NZmmjs',
+        videoId: watchId,
         events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
@@ -38,10 +39,15 @@ function stopVideo() {
 
 document.querySelectorAll('#video-list > li').forEach(element => {
     element.addEventListener("click", function() {
-        player.loadVideoById(element.id);
-        document.getElementById('player').style.display = "block";
-        document.getElementById('videos').scrollIntoView({
-            behavior: "smooth"
-        });
+        if(watchId === '') {
+            document.getElementById('ytplayer').style.display = "block";
+        }
+        if(watchId !== element.id) {
+            watchId = element.id;
+            player.loadVideoById(element.id);
+            document.getElementById('videos').scrollIntoView({
+                behavior: "smooth"
+            });
+        }
     });
 });
