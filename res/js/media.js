@@ -7,7 +7,9 @@ var player;
 var watchId = '';
 var stopPlayAt = 10, stopPlayTimer;
 function onYouTubePlayerAPIReady() {
+    document.getElementById('ytplayer').style.display = "none";
     player = new YT.Player('ytplayer', {
+        videoId: watchId,
         events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
