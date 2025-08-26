@@ -230,7 +230,7 @@ span.page a {
     text-align: left;
     font-size: 36px;
     text-decoration: none;
-    line-height: 6em;
+    line-height: 5em;
     background-size: cover;
     background-position: center;
     -webkit-transition: all 1.0s cubic-bezier(0, 0, 0, 1);
@@ -244,7 +244,8 @@ a:hover div.tile {
     padding-top: 0em;
 }
 div.tile p {
-    filter: drop-shadow(0 0 12px black);
+    filter: drop-shadow(0 0 18px white);
+    color: rgba(255, 255, 255, 0.75);
 }
 
 /* More page styling */

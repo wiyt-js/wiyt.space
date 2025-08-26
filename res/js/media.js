@@ -6,6 +6,7 @@ tagScriptFirst.parentNode.insertBefore(tag, tagScriptFirst);
 var player;
 var watchId = '';
 var stopPlayAt = 10, stopPlayTimer;
+
 function onYouTubePlayerAPIReady() {
     document.getElementById('ytplayer').style.display = "none";
     player = new YT.Player('ytplayer', {
