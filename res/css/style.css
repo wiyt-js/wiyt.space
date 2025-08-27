@@ -101,6 +101,23 @@ div#mishy-credits {
     text-align: center;
 }
 
+/* Button styling */
+button.silk {
+    background-color: rgba(250, 250, 250, 0.25);
+    border: rgba(150, 150, 150, 0.5) 1px solid;
+    border-radius: 25%;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    margin: 12px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
+    cursor: pointer;
+    float: right;
+}
+
 /* Link styling */
 a.silk-link {
     background-color: rgba(50, 50, 50, 0.25);
@@ -262,6 +279,29 @@ span.page a {
     transition: all 1.0s cubic-bezier(0, 0, 0, 1);
 }
 
+/* Window */
+div.window {
+    background-color: black;
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+div.window-wrap {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.window-background {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
 /* More page styling */
 div#jobs p {
     text-align: left;
@@ -390,6 +430,10 @@ header a.link:hover {
 }
 
 /* Text link styling */
+a.link {
+    color: var(--color-blue);
+    text-decoration: none;
+}
 a.link img {
     width: 25px;
     height: var(--height-header);
@@ -478,7 +522,6 @@ video#meta-client {
         padding: 0;
     }
     body {
-        font-size: 16px;
         overflow-x: hidden;
     }
     h2 {
