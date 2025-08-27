@@ -212,7 +212,7 @@ ol[id^="ol-"] {
 /* Pages/Tile styling */
 div.tile {
     opacity: 0;
-    height: calc(160px + 5vw);
+    height: 240px;
     overflow: hidden;
     backdrop-filter: blur(10px);
     padding-left: 2em;
@@ -221,12 +221,17 @@ div.tile {
 }
 a:hover div.tile {
     opacity: 1;
-    height: calc(220px + 5vw);
+    height: 300px;
     padding-top: 0em;
 }
 div.tile p {
-    filter: drop-shadow(0 0 18px white);
-    color: rgba(255, 255, 255, 0.75);
+    filter: drop-shadow(0 0 16px rgba(0, 100, 250, 1));
+    text-shadow: 0 0 32px white;
+    color: rgba(255, 255, 255, 0.2);
+    transition: color 0.5s ease;
+}
+a:hover div.tile p {
+    color: rgba(255, 255, 255, 0.8);
 }
 span.page {
     display: flex;
@@ -234,12 +239,13 @@ span.page {
     align-items: center;
 }
 span.page a {
+    max-width: 1400px;
     display: block;
     width: 100%;
     text-align: left;
     font-size: 36px;
     text-decoration: none;
-    line-height: 7em;
+    line-height: 8em;
     background-size: cover;
     background-position: center;
     -webkit-transition: all 1.0s cubic-bezier(0, 0, 0, 1);
@@ -447,10 +453,6 @@ video#meta-client {
     div#indent {
         grid-template-columns: auto auto;
     }
-    span.page a {
-        width: 100%;
-        font-size: 28px;
-    }
     header, article {
         padding: 0;
     }
@@ -487,7 +489,6 @@ video#meta-client {
         width: 88%;
     }
 }
-
 @media only screen and (max-width: 440px) {
     div#indent {
         grid-template-columns: auto;
