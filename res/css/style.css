@@ -18,6 +18,10 @@
     --color-box-shadow: rgba(0, 0, 0, 1.0);
     --color-text-main: white;
     --color-text-footer: black;
+    --color-title: rgba(10, 180, 255, 1);
+    --color-blue: rgba(10, 80, 200, 1);
+    --color-blue-50: rgba(10, 80, 200, 0.5);
+    --color-blue-25: rgba(10, 80, 200, 0.25);
 }
 * {
     box-sizing: border-box;
@@ -68,6 +72,10 @@ article {
 /* Text syling */
 main p {
     margin: 18px 0;
+}
+p.title {
+    display: inline;
+    color: var(--color-title);
 }
 
 /* Mishy styling */
@@ -180,7 +188,7 @@ ol#video-list {
     transition: background-color 0.5s ease;
 }
 #video-list li:hover {
-    background-color: rgba(10, 80, 200, 0.5);
+    background-color: var(--color-blue-50);
 }
 
 /* Blog styling */
@@ -198,11 +206,11 @@ ol#blog-list {
     transition: all 0.5s ease;
 }
 #blog-list li {
-    background-color: rgba(0, 100, 250, 0.2);
+    background-color: var(--color-blue-25);
 }
 .blog div {
     width: 100%;
-    background-color: rgba(0, 100, 250, 0.4);
+    background-color: var(--color-blue-50);
     height: 500px;
 }
 ol[id^="ol-"] {
@@ -225,7 +233,7 @@ a:hover div.tile {
     padding-top: 0em;
 }
 div.tile p {
-    filter: drop-shadow(0 0 16px rgba(0, 100, 250, 1));
+    filter: drop-shadow(0 0 16px var(--color-blue));
     text-shadow: 0 0 32px white;
     color: rgba(255, 255, 255, 0.2);
     transition: color 0.5s ease;
@@ -239,7 +247,7 @@ span.page {
     align-items: center;
 }
 span.page a {
-    max-width: 1400px;
+    max-width: 1000px;
     display: block;
     width: 100%;
     text-align: left;
@@ -275,6 +283,15 @@ div#indent li {
 div#video-title {
     padding-bottom: 1.5em;
 }
+div.img-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+}
+div.img-center {
+    display: flex;
+    justify-content: center;
+}
 
 /* Text header styling */
 h1, h2, h3, h4 {
@@ -303,6 +320,10 @@ h3 {
 }
 h4 {
     font-size: 28px;
+}
+h4.project-title {
+    text-align: center;
+    padding: 8px 0;
 }
 
 /* Footer styling */
@@ -453,7 +474,7 @@ video#meta-client {
     div#indent {
         grid-template-columns: auto auto;
     }
-    header, article {
+    header {
         padding: 0;
     }
     body {
