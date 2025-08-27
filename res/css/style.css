@@ -212,12 +212,21 @@ ol[id^="ol-"] {
 /* Pages/Tile styling */
 div.tile {
     opacity: 0;
-    height: 160px;
+    height: calc(160px + 5vw);
     overflow: hidden;
     backdrop-filter: blur(10px);
     padding-left: 2em;
     padding-top: 2em;
     transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+}
+a:hover div.tile {
+    opacity: 1;
+    height: calc(220px + 5vw);
+    padding-top: 0em;
+}
+div.tile p {
+    filter: drop-shadow(0 0 18px white);
+    color: rgba(255, 255, 255, 0.75);
 }
 span.page {
     display: flex;
@@ -230,22 +239,13 @@ span.page a {
     text-align: left;
     font-size: 36px;
     text-decoration: none;
-    line-height: 5em;
+    line-height: 7em;
     background-size: cover;
     background-position: center;
     -webkit-transition: all 1.0s cubic-bezier(0, 0, 0, 1);
     -moz-transition: all 1.0s cubic-bezier(0, 0, 0, 1);
     -o-transition: all 1.0s cubic-bezier(0, 0, 0, 1);
     transition: all 1.0s cubic-bezier(0, 0, 0, 1);
-}
-a:hover div.tile {
-    opacity: 1;
-    height: 220px;
-    padding-top: 0em;
-}
-div.tile p {
-    filter: drop-shadow(0 0 18px white);
-    color: rgba(255, 255, 255, 0.75);
 }
 
 /* More page styling */
@@ -449,9 +449,7 @@ video#meta-client {
     }
     span.page a {
         width: 100%;
-    }
-    main {
-        padding: 0 16px 0 16px;
+        font-size: 28px;
     }
     header, article {
         padding: 0;
