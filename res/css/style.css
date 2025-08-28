@@ -482,6 +482,13 @@ img#screenshot-mooshapp {
     margin: auto;
     max-width: 732px;
 }
+img.inline {
+    display: inline-block;
+    float: right;
+    width: 50%;
+    padding: 12px;
+    margin: 0 auto;
+}
 
 /* Audio controls styling */
 audio {
@@ -512,6 +519,11 @@ video#meta-client {
 
 /* Screen check adjustments (@media) */
 @media only screen and (max-width: 680px) {
+    img.inline {
+        display: block;
+        width: 100%;
+        max-width: 50%;
+    }
     div.silk-list {
         flex-direction: column;
     }
@@ -554,6 +566,10 @@ video#meta-client {
     }
 }
 @media only screen and (max-width: 440px) {
+    img.inline {
+        width: 100%;
+        max-width: 100%;
+    }
     div#indent {
         grid-template-columns: auto;
         width: 180px;
