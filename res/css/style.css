@@ -216,7 +216,7 @@ div.post {
     border-radius: 20px;
     border-left: var(--color-background-table-border) 1px dashed;
     display: grid;
-    grid-template-columns: 35% 1fr;
+    grid-template-columns: 25% 1fr;
     grid-column-gap: 0;
     margin-bottom: 2em;
     background-color: var(--color-background-table-border);
@@ -234,7 +234,10 @@ div.post div {
 div.post p {
     text-align: center;
 }
-
+div.post p:first-child {
+    margin: auto;
+    padding: 24px 12px;
+}
 /* Pages/Tile styling */
 div.tile {
     opacity: 0;
