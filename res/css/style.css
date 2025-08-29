@@ -213,20 +213,23 @@ ol#video-list {
 
 /* Blog styling */
 div.post {
+    border-radius: 20px;
+    border-left: var(--color-background-table-border) 1px dashed;
     display: grid;
     grid-template-columns: 35% 1fr;
     grid-column-gap: 0;
     margin-bottom: 2em;
-    background-color: var(--color-background-table-2);
+    background-color: var(--color-background-table-border);
 }
 div.post div {
     width: 100%;
-    border-left-style: dashed;
-    border-left-color: var(--color-blue-25);
-    border-left-width: 1px;
+    border-radius: 20px;
+    border-left: var(--color-blue-25) 1px dashed;
     padding: 16px;
     background: #00000000;
     background: linear-gradient(25deg,rgba(0, 0, 0, 0) 70%, var(--color-blue-25) 100%);
+    mask-image: linear-gradient(#000, #000);
+    background-color: var(--color-background-table-border);
 }
 div.post p {
     text-align: center;
@@ -238,8 +241,6 @@ div.tile {
     height: 240px;
     overflow: hidden;
     backdrop-filter: blur(10px);
-    padding-left: 2em;
-    padding-top: 2em;
     transition: all 0.5s cubic-bezier(0, 0, 0, 1);
 }
 a:hover div.tile {
@@ -248,12 +249,17 @@ a:hover div.tile {
     padding-top: 0em;
 }
 div.tile p {
-    filter: drop-shadow(0 0 16px var(--color-blue));
-    text-shadow: 0 0 32px white;
+    transform: scaleY(0.75);
+    font-size: 64px;
+    filter: drop-shadow(0 0 32px var(--color-blue));
+    text-align: center;
+    text-shadow: 0 0 0 white;
     color: rgba(255, 255, 255, 0.2);
-    transition: color 0.5s ease;
+    transition: transform 0.5s ease, color 0.5s ease, text-shadow 0.5s ease;
 }
 a:hover div.tile p {
+    transform: scaleY(1);
+    text-shadow: 0 0 32px white;
     color: rgba(255, 255, 255, 0.8);
 }
 span.page {
@@ -518,6 +524,9 @@ video#meta-client {
 
 /* Screen check adjustments (@media) */
 @media only screen and (max-width: 680px) {
+    div.tile p {
+        font-size: 32px;
+    }
     a#home {
         display: block;
     }
@@ -576,6 +585,7 @@ video#meta-client {
     }
     div.post {
         grid-template-columns: 100%;
+        border-left: none;
     }
     img.inline {
         width: 100%;
