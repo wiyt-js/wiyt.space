@@ -5,11 +5,11 @@ span.page a#banner-aboutme {
     background-image: linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/about-me.jpg');
 }
 
-span.page a#banner-designs {
-    background-image: -webkit-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/designs.jpg');
-    background-image: -moz-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/designs.jpg');
-    background-image: -o-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/designs.jpg');
-    background-image: linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/designs.jpg');
+span.page a#banner-projects {
+    background-image: -webkit-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/projects.jpg');
+    background-image: -moz-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/projects.jpg');
+    background-image: -o-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/projects.jpg');
+    background-image: linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/projects.jpg');
 }
 
 span.page a#banner-stream {
@@ -17,4 +17,11 @@ span.page a#banner-stream {
     background-image: -moz-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/stream.jpg');
     background-image: -o-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/stream.jpg');
     background-image: linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/stream.jpg');
+}
+
+span.page a#banner-blog {
+    background-image: -webkit-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/blog.jpg');
+    background-image: -moz-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/blog.jpg');
+    background-image: -o-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/blog.jpg');
+    background-image: linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/blog.jpg');
 }

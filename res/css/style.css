@@ -152,6 +152,9 @@ div.silk-list {
     justify-content: center;
     align-items: center;
 }
+a#home {
+    display: none;
+}
 
 /* Table styling */
 table {
@@ -209,29 +212,23 @@ ol#video-list {
 }
 
 /* Blog styling */
-.blog {
+div.post {
     display: grid;
-    grid-template-columns: 180px 1fr;
+    grid-template-columns: 35% 1fr;
     grid-column-gap: 0;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
-ol#blog-list {
-    text-align: left;
-    list-style-type: lower-roman;
-    width: 180px;
-    height: 100%;
-    transition: all 0.5s ease;
-}
-#blog-list li {
-    background-color: var(--color-blue-25);
-}
-.blog div {
+div.post div {
     width: 100%;
-    background-color: var(--color-blue-50);
-    height: 500px;
+    border-left-style: dashed;
+    border-left-color: var(--color-blue-25);
+    border-left-width: 1px;
+    padding: 16px;
+    background: #00000000;
+    background: linear-gradient(25deg,rgba(0, 0, 0, 0) 70%, var(--color-blue-25) 100%);
 }
-ol[id^="ol-"] {
-    list-style-type: disc;
+div.post p {
+    text-align: center;
 }
 
 /* Pages/Tile styling */
@@ -320,7 +317,7 @@ div#indent h4 {
 div#indent li {
     list-style-type: none;
 }
-div#video-title {
+div#page-subtitle {
     padding-bottom: 1.5em;
 }
 div.img-grid {
@@ -436,6 +433,7 @@ a.link {
 }
 a.link img {
     width: 25px;
+    min-width: 15px;
     height: var(--height-header);
     transition: width 0.5s ease;
 }
@@ -519,6 +517,9 @@ video#meta-client {
 
 /* Screen check adjustments (@media) */
 @media only screen and (max-width: 680px) {
+    a#home {
+        display: block;
+    }
     img.inline {
         display: block;
         width: 100%;
@@ -566,6 +567,15 @@ video#meta-client {
     }
 }
 @media only screen and (max-width: 440px) {
+    a.link img {
+        width: 15px;
+    }
+    a.link:hover img {
+        width: 25px;
+    }
+    div.post {
+        grid-template-columns: 100%;
+    }
     img.inline {
         width: 100%;
         max-width: 100%;
