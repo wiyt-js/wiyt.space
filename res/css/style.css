@@ -217,6 +217,7 @@ div.post {
     grid-template-columns: 35% 1fr;
     grid-column-gap: 0;
     margin-bottom: 2em;
+    background-color: var(--color-background-table-2);
 }
 div.post div {
     width: 100%;
