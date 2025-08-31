@@ -324,11 +324,13 @@ div#indent {
 }
 div#indent h4 {
     font-size: 24px;
-    padding: 0.5em 0;
+    padding-top: 0.5em;
     text-decoration: underline;
+    text-align: center;
 }
 div#indent p {
     margin: 0;
+    text-align: center;
 }
 div#page-subtitle {
     padding-bottom: 1.5em;
@@ -547,6 +549,12 @@ video#meta-client {
     div#indent {
         grid-template-columns: auto auto;
     }
+    div#indent h4 {
+        text-align: left;
+    }
+    div#indent p {
+        text-align: left;
+    }
     header {
         padding: 0;
     }
@@ -601,5 +609,11 @@ video#meta-client {
         width: 180px;
         margin: 0 auto;
         padding: 0;
+    }
+    div#indent h4 {
+        text-align: center;
+    }
+    div#indent p {
+        text-align: center;
     }
 }
