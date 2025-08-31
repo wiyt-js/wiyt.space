@@ -499,8 +499,9 @@ img.inline {
     display: inline-block;
     float: right;
     width: 50%;
-    padding: 12px;
+    padding: 12px 0 12px 12px;
     margin: 0 auto;
+    transition: max-width 0.5s ease;
 }
 
 /* Audio controls styling */
@@ -549,10 +550,7 @@ video#meta-client {
     div#indent {
         grid-template-columns: auto auto;
     }
-    div#indent h4 {
-        text-align: left;
-    }
-    div#indent p {
+    div#indent h4, div#indent p {
         text-align: left;
     }
     header {
@@ -561,15 +559,15 @@ video#meta-client {
     body {
         overflow-x: hidden;
     }
+    h1 {
+        display: none;
+    }
     h2 {
         text-align: center;
         overflow: hidden;
     }
     h4 {
         text-indent: 0em;
-    }
-    h1 {
-        display: none;
     }
     header span.links {
         justify-content: center;
@@ -603,6 +601,7 @@ video#meta-client {
     img.inline {
         width: 100%;
         max-width: 100%;
+        padding: 12px 0;
     }
     div#indent {
         grid-template-columns: auto;
@@ -610,10 +609,7 @@ video#meta-client {
         margin: 0 auto;
         padding: 0;
     }
-    div#indent h4 {
-        text-align: center;
-    }
-    div#indent p {
+    div#indent h4, div#indent p {
         text-align: center;
     }
 }
