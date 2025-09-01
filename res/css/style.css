@@ -9,16 +9,18 @@
     --width-page-max: 900px;
     --width-page-min: 200px;
     --color-background-header: rgba(0, 0, 0, 0.5);
-    --color-background-footer: rgba(255,255, 255, 1.0);
+    --color-background-footer: white;
     --color-background-main: rgba(10, 10, 10, 1.0);
     --color-background-hover: rgba(80, 80, 80, 0.1);
     --color-background-table-1: rgba(0, 0, 0, 0.6);
     --color-background-table-2: rgba(0, 0, 0, 0.2);
     --color-background-table-border: rgba(0, 0, 0, 0.4);
     --color-background-grid: rgba(0, 0, 0, 0.3);
-    --color-box-shadow: rgba(0, 0, 0, 1.0);
+    --color-box-shadow: black;
     --color-text-main: white;
+    --color-text-blog-month: rgba(255, 255, 255, 0.5);
     --color-text-footer: black;
+    --color-text-link: rgb(116, 167, 255);
     --color-title: rgba(10, 180, 255, 1);
     --color-blue: rgba(10, 80, 200, 1);
     --color-blue-50: rgba(10, 80, 200, 0.5);
@@ -222,7 +224,7 @@ div.post {
     grid-column-gap: 0;
     margin-bottom: 2em;
 }
-div.post div {
+div.post div:not(div#iframe) {
     width: 100%;
     border-radius: 20px;
     border-left: var(--color-background-grid) 1px solid;
@@ -240,6 +242,10 @@ div.post p:first-child {
     margin: auto;
     padding: 24px 12px;
 }
+div.post a {
+    color: var(--color-text-link);
+}
+
 /* Pages/Tile styling */
 div.tile {
     opacity: 0;
@@ -377,6 +383,11 @@ h4.project-title {
     text-align: center;
     padding: 8px 0;
 }
+h3.blog-month {
+    padding-bottom: 24px;
+    color: var(--color-text-blog-month);
+    font-size: 18px;
+}
 
 /* Footer styling */
 footer {
@@ -464,7 +475,10 @@ a.pilcrow {
     font-size: 14px;
     position: absolute;
 }
-h2:hover a.pilcrow {
+h3 a.pilcrow {
+    font-size: 10px;
+}
+h2:hover a.pilcrow, h3:hover a.pilcrow {
     opacity: 1;
 }
 
@@ -533,6 +547,9 @@ video#meta-client {
 
 /* Screen check adjustments (@media) */
 @media only screen and (max-width: 680px) {
+    h3.blog-month {
+        text-align: center;
+    }
     div.tile p {
         font-size: 40px;
     }
