@@ -323,6 +323,9 @@ div.window-background {
 }
 
 /* More page styling */
+div.giscus {
+    padding-top: 24px;
+}
 div#jobs p {
     text-align: left;
     margin: 0;
