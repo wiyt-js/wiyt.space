@@ -31,6 +31,11 @@
     margin: 0;
 }
 
+/* Font Awesome styling */
+i[class^="fa-"] {
+    color: white;
+}
+
 /* Body, Section styling */
 body {
     padding: 0;
@@ -142,7 +147,7 @@ a.silk-link:hover, a.silk-link:active {
     border: rgba(50, 50, 50, 0.75) 1px solid;
     color: white;
 }
-a.silk-link img {
+a.silk-link i {
     width: 20px;
     height: 20px;
     max-width: 20px;
@@ -454,6 +459,7 @@ header a.link {
     height: var(--height-header);
     transition: background-color 0.5s ease;
     overflow: hidden;
+    min-width: 40px;
 }
 header a.link:hover {
     background-color: var(--color-background-hover);
@@ -464,14 +470,22 @@ a.link {
     color: var(--color-blue);
     text-decoration: none;
 }
-a.link img {
-    width: 25px;
-    min-width: 15px;
-    height: var(--height-header);
-    transition: width 0.5s ease;
+a.link i[class^="fa-"] {
+    color: var(--color-text-main);
+    transform: scale(0.6);
+    transform-origin: center center;
+    transition: transform 0.5s cubic-bezier(0, 0, 0, 1), color 0.5s cubic-bezier(0, 0, 0, 1);
+    vertical-align: top;
+    text-align: center;
+    line-height: 2;
 }
-a.link:hover img {
-    width: 45px;
+a.link:hover i[class^="fa-"] {
+    color: var(--color-blue);
+    transform: scale(1);
+}
+a.link:active i[class^="fa-"] {
+    color: var(--color-blue-50);
+    transform: scale(1.25);
 }
 a.pilcrow {
     opacity: 0;
@@ -619,11 +633,14 @@ video#meta-client {
     div.img-grid {
         grid-template-columns: auto;
     }
-    a.link img {
-        width: 20px;
+    a.link i[class^="fa-"] {
+        transform: scale(0.6);
     }
-    a.link:hover img {
-        width: 25px;
+    a.link:hover i[class^="fa-"] {
+        transform: scale(0.75);
+    }
+    a.link:active i[class^="fa-"] {
+        transform: scale(1);
     }
     div.post {
         grid-template-columns: 100%;
