@@ -191,6 +191,11 @@ iframe {
     height: 100%;
     max-width: var(--width-page-max);
 }
+div#iframe {
+    overflow: hidden;
+    border-radius: 30px;
+    transition: border-radius 1.0s ease;
+}
 #ytplayer {
     display: none;
 }
@@ -422,7 +427,7 @@ header img.logo {
     width: 130px;
     max-width: 130px;
     height: 100%;
-    transition: all 1s ease;
+    transition: all 1.0s ease;
     transform: rotate(0) scale3d(1, 1, 1);
     opacity: 1;
     visibility: visible;
@@ -527,7 +532,7 @@ video#meta-client {
     display: block;
     margin: 0 auto;
     width: 100%;
-    transition: width 1s ease;
+    transition: width 1.0s ease;
 }
 
 /* Scroll Margin Fix (Header) */
@@ -627,5 +632,8 @@ video#meta-client {
     }
     div#indent h4, div#indent p {
         text-align: center;
+    }
+    div#iframe {
+        border-radius: 15px;
     }
 }
