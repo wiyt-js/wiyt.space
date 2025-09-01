@@ -551,6 +551,9 @@ video#meta-client {
 
 /* Screen check adjustments (@media) */
 @media only screen and (max-width: 680px) {
+    div.img-grid {
+        grid-template-columns: auto auto;
+    }
     h3.blog-month {
         text-align: center;
     }
@@ -610,6 +613,9 @@ video#meta-client {
     }
 }
 @media only screen and (max-width: 440px) {
+    div.img-grid {
+        grid-template-columns: auto;
+    }
     a.link img {
         width: 20px;
     }
