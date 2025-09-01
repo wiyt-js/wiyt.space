@@ -33,7 +33,7 @@
 
 /* Font Awesome styling */
 i[class^="fa-"] {
-    color: white;
+    color: var(--color-text-main);
 }
 
 /* Body, Section styling */
