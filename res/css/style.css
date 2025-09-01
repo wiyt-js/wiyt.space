@@ -354,7 +354,6 @@ div.img-center {
 /* Text header styling */
 h1, h2, h3, h4 {
     text-align: left;
-    transition: text-align 1s ease;
 }
 h2, h3 {
     text-transform: uppercase;
