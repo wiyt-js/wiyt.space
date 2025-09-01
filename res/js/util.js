@@ -1,3 +1,4 @@
+// Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function(event) {
         event.preventDefault();
@@ -6,3 +7,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Current year
+document.getElementById('year').innerHTML = new Date().getFullYear();
