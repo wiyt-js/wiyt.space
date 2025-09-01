@@ -9,6 +9,11 @@ var stopPlayAt = 10, stopPlayTimer;
 
 function onYouTubePlayerAPIReady() {
     document.getElementById('ytplayer').style.display = "none";
+    if(watchId == '') return;
+    createPlayer();
+}
+
+function createPlayer() {
     player = new YT.Player('ytplayer', {
         videoId: watchId,
         events: {
@@ -32,6 +37,8 @@ function onPlayerStateChange(event) {
             remaining = (stopPlayAt - time) / rate;
             stopPlayTimer = setTimeout(stopVideo, remaining * 1000);
         }
+    } else if(event.data == YT.PlayerState.ENDED) {
+        console.log('Video finished playback');
     }
 }
 
@@ -46,6 +53,9 @@ document.querySelectorAll('#video-list > li').forEach(element => {
         }
         if(watchId !== element.id) {
             watchId = element.id;
+            if(player == null) {
+                createPlayer();
+            }
             player.loadVideoById(watchId);
             document.getElementById('videos').scrollIntoView({
                 behavior: "smooth"
