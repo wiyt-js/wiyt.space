@@ -25,23 +25,17 @@
     --color-blue: rgba(10, 80, 200, 1);
     --color-blue-50: rgba(10, 80, 200, 0.5);
     --color-blue-25: rgba(10, 80, 200, 0.25);
-    --color-silk-border: rgba(150, 150, 150, 0.5);
-    --color-silk-background: rgba(250, 250, 250, 0.25);
+    --color-silk-border: rgba(105, 105, 105, 0.5);
+    --color-silk-background: rgba(5, 5, 5, 0.25);
     --color-silk-link-border: rgba(205, 205, 205, 0.25);
     --color-silk-link-background: rgba(205, 205, 205, 0.5);
     --color-silk-link-border-hover: rgba(205, 205, 205, 0.5);
     --color-silk-link-background-hover: rgba(205, 205, 205, 0.75);
 }
+
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
     html[data-theme="dark"] {
-        --glow-radius: 8px;
-        --glow-opacity: 0.25;
-        --blur-header: 8px;
-        --height-header: 72px;
-        --height-footer: 100px;
-        --height-img-mishy: 788px;
-        --width-page-max: 900px;
-        --width-page-min: 200px;
         --color-background-header: rgba(0, 0, 0, 0.5);
         --color-background-footer: white;
         --color-background-main: rgba(10, 10, 10, 1.0);
@@ -54,11 +48,6 @@
         --color-text-main: white;
         --color-text-blog-month: rgba(255, 255, 255, 0.75);
         --color-text-footer: black;
-        --color-text-link: rgb(116, 167, 255);
-        --color-title: rgba(10, 180, 255, 1);
-        --color-blue: rgba(10, 80, 200, 1);
-        --color-blue-50: rgba(10, 80, 200, 0.5);
-        --color-blue-25: rgba(10, 80, 200, 0.25);
         --color-silk-border: rgba(150, 150, 150, 0.5);
         --color-silk-background: rgba(250, 250, 250, 0.25);
         --color-silk-link-border: rgba(50, 50, 50, 0.25);
@@ -71,6 +60,8 @@
         display: inline;
     }
 }
+
+/* Light Mode */
 [data-theme="light"] header img.logo {
     display: inline;
 }
@@ -111,11 +102,10 @@ main {
     top: 0;
     margin: calc((var(--height-header)/2) + var(--height-header)) auto 0 auto;
     min-width: var(--width-page-min);
-    transition: padding 0.5s ease;
     box-shadow: 0 0 48px var(--color-box-shadow);
     clip-path: inset(0 0 calc(var(--height-footer)*-1) 0);
     -webkit-clip-path: inset(0 0 calc(var(--height-footer)*-1) 0);
-    transition: background-color 1.0s cubic-bezier(0, 0, 0, 1);
+    transition: padding 0.5s ease, box-shadow 1.0s cubic-bezier(0, 0, 0, 1), background-color 1.0s cubic-bezier(0, 0, 0, 1);
 }
 main.error {
     background-image: linear-gradient(0deg, rgba(10, 10, 10, 0.75) 0%, var(--color-background-main) 100%), url("../img/background-looping.gif");
@@ -170,15 +160,15 @@ button.silk {
     border: var(--color-silk-border) 1px solid;
     border-radius: 25%;
     color: var(--color-text-main);
+    cursor: pointer;
     display: inline-block;
+    float: right;
     font-size: 12px;
     margin: 12px;
     width: 32px;
     height: 32px;
     text-align: center;
-    transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
-    cursor: pointer;
-    float: right;
+    transition: background-color 0.5s cubic-bezier(0, 0, 0, 1), border 0.5s cubic-bezier(0, 0, 0, 1), color 0.5s ease;
 }
 
 /* Link styling */
@@ -195,7 +185,7 @@ a.silk-link {
     padding: 10px 16px;
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
+    transition: background-color 0.5s cubic-bezier(0, 0, 0, 1), border 0.5s cubic-bezier(0, 0, 0, 1), color 0.5s cubic-bezier(0, 0, 0, 1);
 }
 a.silk-link:hover, a.silk-link:active {
     background-color: var(--color-silk-link-background-hover);
@@ -209,6 +199,7 @@ a.silk-link i {
     max-height: 20px;
     object-position: 0 2px;
     margin-right: 10px;
+    transition: color 0.5s cubic-bezier(0, 0, 0, 1);
 }
 div.silk-list {
     display: flex;
@@ -486,7 +477,7 @@ header {
     backdrop-filter: blur(var(--blur-header));
     overflow: hidden;
     padding: 0 10%;
-    transition: padding 0.5s ease;
+    transition: background-color 1.0s cubic-bezier(0, 0, 0, 1), box-shadow 1.0s cubic-bezier(0, 0, 0, 1), padding 0.5s ease;
 }
 header img.logo, header img.logo-dark {
     display: none;
