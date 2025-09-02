@@ -33,7 +33,7 @@
     --color-silk-link-background-hover: rgba(205, 205, 205, 0.75);
 }
 @media (prefers-color-scheme: dark) {
-    [data-theme="dark"] {
+    html[data-theme="dark"] {
         --glow-radius: 8px;
         --glow-opacity: 0.25;
         --blur-header: 8px;
