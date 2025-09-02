@@ -11,7 +11,7 @@
     --color-background-header: rgba(255, 255, 255, 0.5);
     --color-background-footer: black;
     --color-background-main: rgba(245, 245, 245, 1.0);
-    --color-background-hover: rgba(180, 180, 180, 0.1);
+    --color-background-hover: rgba(180, 180, 180, 0.2);
     --color-background-table-1: rgba(255, 255, 255, 0.6);
     --color-background-table-2: rgba(255, 255, 255, 0.2);
     --color-background-table-border: rgba(255, 255, 255, 0.4);
@@ -39,7 +39,7 @@
         --color-background-header: rgba(0, 0, 0, 0.5);
         --color-background-footer: white;
         --color-background-main: rgba(10, 10, 10, 1.0);
-        --color-background-hover: rgba(80, 80, 80, 0.1);
+        --color-background-hover: rgba(80, 80, 80, 0.2);
         --color-background-table-1: rgba(0, 0, 0, 0.6);
         --color-background-table-2: rgba(0, 0, 0, 0.2);
         --color-background-table-border: rgba(0, 0, 0, 0.4);
