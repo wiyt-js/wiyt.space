@@ -1,27 +1,89 @@
+@property --dark-grad {
+    syntax: '<color>';
+    initial-value: rgba(0,0,0,0.3);
+    inherits: false;
+}
+
+@property --light-grad {
+    syntax: '<color>';
+    initial-value: rgba(212,222,255,0.1);
+    inherits: false;
+}
+
+@property --blue-grad {
+    syntax: '<color>';
+    initial-value: rgba(0,60,255,0.4);
+    inherits: false;
+}
+
+span.page a#banner-aboutme, span.page a#banner-projects, span.page a#banner-stream, span.page a#banner-blog,
+    [data-theme="dark"] span.page a#banner-aboutme, [data-theme="dark"] span.page a#banner-projects, [data-theme="dark"] span.page a#banner-stream, [data-theme="dark"] span.page a#banner-blog {
+    transition: background-image 3s cubic-bezier(0, 0, 0, 1), --blue-grad 3s cubic-bezier(0, 0, 0, 1),
+        --dark-grad 3s cubic-bezier(0, 0, 0, 1), --light-grad 3s cubic-bezier(0, 0, 0, 1);
+    -webkit-transition: background-image 3s cubic-bezier(0, 0, 0, 1), --blue-grad 3s cubic-bezier(0, 0, 0, 1),
+        --dark-grad 3s cubic-bezier(0, 0, 0, 1), --light-grad 3s cubic-bezier(0, 0, 0, 1);  
+    -moz-transition: background-image 3s cubic-bezier(0, 0, 0, 1), --blue-grad 3s cubic-bezier(0, 0, 0, 1),
+        --dark-grad 3s cubic-bezier(0, 0, 0, 1), --light-grad 3s cubic-bezier(0, 0, 0, 1);  
+    -o-transition: background-image 3s cubic-bezier(0, 0, 0, 1), --blue-grad 3s cubic-bezier(0, 0, 0, 1),
+        --dark-grad 3s cubic-bezier(0, 0, 0, 1), --light-grad 3s cubic-bezier(0, 0, 0, 1);
+
+}
+span.page a#banner-aboutme, span.page a#banner-projects, span.page a#banner-stream, span.page a#banner-blog {
+    --blue-grad: rgba(0,60,255,0.4);
+}
+[data-theme="dark"] span.page a#banner-aboutme, [data-theme="dark"] span.page a#banner-projects, [data-theme="dark"] span.page a#banner-stream, [data-theme="dark"] span.page a#banner-blog {
+    --dark-grad: rgba(0,60,255,0.1);
+    --light-grad: rgba(255,255,255,0.3);
+}
+
 span.page a#banner-aboutme {
-    background-image: -webkit-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/about-me.jpg');
-    background-image: -moz-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/about-me.jpg');
-    background-image: -o-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/about-me.jpg');
-    background-image: linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/about-me.jpg');
+    background-image: -webkit-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/about-me.jpg');
+    background-image: -moz-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/about-me.jpg');
+    background-image: -o-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/about-me.jpg');
+    background-image: linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/about-me.jpg');
 }
-
 span.page a#banner-projects {
-    background-image: -webkit-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/projects.jpg');
-    background-image: -moz-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/projects.jpg');
-    background-image: -o-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/projects.jpg');
-    background-image: linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/projects.jpg');
+    background-image: -webkit-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/projects.jpg');
+    background-image: -moz-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/projects.jpg');
+    background-image: -o-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/projects.jpg');
+    background-image: linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/projects.jpg');
 }
-
 span.page a#banner-stream {
-    background-image: -webkit-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/stream.jpg');
-    background-image: -moz-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/stream.jpg');
-    background-image: -o-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/stream.jpg');
-    background-image: linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/stream.jpg');
+    background-image: -webkit-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/stream.jpg');
+    background-image: -moz-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/stream.jpg');
+    background-image: -o-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/stream.jpg');
+    background-image: linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/stream.jpg');
+}
+span.page a#banner-blog {
+    background-image: -webkit-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/blog.jpg');
+    background-image: -moz-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/blog.jpg');
+    background-image: -o-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/blog.jpg');
+    background-image: linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/blog.jpg');
 }
 
-span.page a#banner-blog {
-    background-image: -webkit-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/blog.jpg');
-    background-image: -moz-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/blog.jpg');
-    background-image: -o-linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/blog.jpg');
-    background-image: linear-gradient(0deg, rgba(0,60,255,0.1) 0%, rgba(0,60,255,0.4) 100%), url('../../res/img/banners/blog.jpg');
+@media (prefers-color-scheme: dark) {
+    [data-theme="dark"] span.page a#banner-aboutme {
+        background-image: -webkit-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/about-me.jpg');
+        background-image: -moz-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/about-me.jpg');
+        background-image: -o-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/about-me.jpg');
+        background-image: linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/about-me.jpg');
+    }
+    [data-theme="dark"] span.page a#banner-projects {
+        background-image: -webkit-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/projects.jpg');
+        background-image: -moz-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/projects.jpg');
+        background-image: -o-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/projects.jpg');
+        background-image: linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/projects.jpg');
+    }
+    [data-theme="dark"] span.page a#banner-stream {
+        background-image: -webkit-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/stream.jpg');
+        background-image: -moz-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/stream.jpg');
+        background-image: -o-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/stream.jpg');
+        background-image: linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/stream.jpg');
+    }
+    [data-theme="dark"] span.page a#banner-blog {
+        background-image: -webkit-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/blog.jpg');
+        background-image: -moz-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/blog.jpg');
+        background-image: -o-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/blog.jpg');
+        background-image: linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/blog.jpg');
+    }
 }
