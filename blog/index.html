@@ -14,6 +14,13 @@
         <meta content="website" property="og:type"/>
         <meta content="../res/img/og-image.png" property="og:image"/>
 
+        <script>
+            (function () {
+                const theme = localStorage.getItem('theme') || 'light';
+                document.documentElement.setAttribute('data-theme', theme);
+            })();
+        </script>
+
         <link rel="icon" href="../res/img/favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +33,7 @@
 
     <body>
         <header class="fixed">
-            <a href="../"><img class="logo" src="../res/svg/wiyt.svg" alt="Wiyt"/></a>
+            <a href="../"><img class="logo" src="../res/svg/wiyt.svg" alt="Wiyt"/><img class="logo-dark" src="../res/svg/wiyt-dark.svg" alt="Wiyt"/></a>
             <span class="links">
                 <a class="link" href="../" id="home">
                     <i class="fa-solid fa-home fa-2x" title="Home"></i>
@@ -45,6 +52,9 @@
                 </a>
                 <a class="link" href="https://www.twitter.com/wiyt_js">
                     <i class="fa-brands fa-twitter fa-2x" title="X/Twitter"></i>
+                </a>
+                <a class="link" id="theme-toggle">
+                    <i class="fa-solid fa-circle-half-stroke fa-2x" title="Theme"></i>
                 </a>
             </span>
         </header>
@@ -115,7 +125,7 @@
             data-reactions-enabled="1"
             data-emit-metadata="0"
             data-input-position="top"
-            data-theme="preferred_color_scheme"
+            data-theme="dark"
             data-lang="en"
             data-loading="lazy"
             crossorigin="anonymous"
