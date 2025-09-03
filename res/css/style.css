@@ -485,11 +485,11 @@ footer {
 /* Header styling */
 header {
     background-color: var(--color-background-header);
-    box-shadow: 0 0 32px var(--color-box-shadow);
+    /* box-shadow: 0 0 32px var(--color-box-shadow); */
     z-index: 1;
     height: var(--height-header);
     line-height: var(--height-header);
-    backdrop-filter: blur(var(--blur-header));
+    /* backdrop-filter: blur(var(--blur-header)); */
     overflow: hidden;
     padding: 0 10%;
     transition: background-color 1.0s cubic-bezier(0, 0, 0, 1), box-shadow 1.0s cubic-bezier(0, 0, 0, 1), padding 0.5s ease;
