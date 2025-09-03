@@ -8,6 +8,7 @@
     --height-img-mishy: 788px;
     --width-page-max: 900px;
     --width-page-min: 200px;
+    --width-banners: 1000px;
     --color-background-header: rgba(255, 255, 255, 0.5);
     --color-background-footer: black;
     --color-background-main: rgba(245, 245, 245, 1.0);
@@ -344,7 +345,7 @@ span.page {
     align-items: center;
 }
 span.page a {
-    max-width: 1000px;
+    max-width: var(--width-banners);
     display: block;
     width: 100%;
     text-align: left;
