@@ -311,6 +311,11 @@ div.post a {
 }
 
 /* Pages/Tile styling */
+section.banners {
+    align-content: center;
+    height: 700px;
+    max-height: 700px;
+}
 div.tile {
     opacity: 0;
     height: 140px;
