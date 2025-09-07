@@ -49,8 +49,14 @@ function closeElement(element) {
 
 function disableScrolling() {
     document.body.style.overflow = "hidden";
+    window.addEventListener('DOMMouseScroll', preventDefault);
+    window.addEventListener('touchmove', preventDefault);
+    window.addEventListener('keydown', preventDefaultForScrollKeys);
 }
 
 function enableScrolling() {
     document.body.style.overflow = "visible";
+    window.removeEventListener('DOMMouseScroll', preventDefault);
+    window.removeEventListener('touchmove', preventDefault);
+    window.removeEventListener('keydown', preventDefaultForScrollKeys);
 }
