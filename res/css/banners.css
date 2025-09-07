@@ -26,7 +26,7 @@ span.page a#banner-aboutme, span.page a#banner-projects, span.page a#banner-stre
         --dark-grad 3s cubic-bezier(0, 0, 0, 1), --light-grad 3s cubic-bezier(0, 0, 0, 1);  
     -o-transition: background-image 3s cubic-bezier(0, 0, 0, 1), --blue-grad 3s cubic-bezier(0, 0, 0, 1),
         --dark-grad 3s cubic-bezier(0, 0, 0, 1), --light-grad 3s cubic-bezier(0, 0, 0, 1);
-
+    background-blend-mode: screen;
 }
 span.page a#banner-aboutme, span.page a#banner-projects, span.page a#banner-stream, span.page a#banner-blog {
     --blue-grad: rgba(0,60,255,0.4);

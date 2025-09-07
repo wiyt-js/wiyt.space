@@ -1,0 +1,56 @@
+// Showing photos
+addEventListener("DOMContentLoaded", (event) => {
+    const links = document.getElementsByTagName('a');
+    for(let i = 0; i < links.length; i++) {
+        links[i].onclick = function(event) {
+            event.preventDefault();
+            const href = this.getAttribute('href');
+            if(href.includes("res/img/")) createPhoto(href);
+        };
+    }
+});
+
+function createPhoto(link) {
+    // Create elements
+    const photoWrapper = document.createElement('div'),
+        button = document.createElement('button'),
+        image = document.createElement('img'),
+        faIcon = document.createElement('i'),
+        aInfo = document.createElement('a');
+
+    // Define classes and variables
+    photoWrapper.classList.add('photo-wrapper');
+    faIcon.classList.add('fa-solid', 'fa-close', 'fa-2x');
+    button.classList.add('photo-exit');
+    button.addEventListener('click', function() {
+        closeElement(photoWrapper);
+    });
+    image.src = link;
+    image.alt = "Photo";
+    aInfo.href = link;
+    elementZoom = image;
+
+    // Add to main element
+    button.prepend(faIcon);
+    aInfo.appendChild(image);
+    photoWrapper.appendChild(button);
+    photoWrapper.appendChild(aInfo);
+    document.getElementById('photos').appendChild(photoWrapper);
+    disableScrolling();
+}
+
+function closeElement(element) { 
+    if(element) {
+        element.remove();
+        elementZoom = null;
+        enableScrolling();
+    }
+}
+
+function disableScrolling() {
+    document.body.style.overflow = "hidden";
+}
+
+function enableScrolling() {
+    document.body.style.overflow = "visible";
+}
