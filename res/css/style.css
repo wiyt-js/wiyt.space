@@ -752,9 +752,6 @@ video#meta-client {
     }
 }
 @media only screen and (max-width: 440px) {
-    div.img-grid {
-        grid-template-columns: auto;
-    }
     a.link i[class^="fa-"] {
         transform: scale(0.6);
     }
