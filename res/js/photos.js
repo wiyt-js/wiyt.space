@@ -4,8 +4,7 @@ addEventListener("DOMContentLoaded", (event) => {
     for(let i = 0; i < links.length; i++) {
         links[i].onclick = function(event) {
             event.preventDefault();
-            const href = this.getAttribute('href');
-            if(href.includes("res/img/")) createPhoto(href);
+            createPhoto(this.getAttribute('href'));
         };
     }
 });

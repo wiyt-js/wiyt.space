@@ -434,10 +434,18 @@ div.img-grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 100%;
+    overflow: hidden;
 }
 div.img-grid img {
     width: 100%;
     height: 100%;
+    transition: transform 1.0s ease;
+}
+div.img-grid a {
+    overflow: hidden;
+}
+div.img-grid a:hover img {
+    transform: scale(1.5);
 }
 div.img-center {
     display: flex;
