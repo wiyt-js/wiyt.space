@@ -1,8 +1,8 @@
 // Showing photos
-addEventListener("DOMContentLoaded", (event) => {
-    const links = document.getElementsByClassName('img-grid')[0].getElementsByTagName('a');
-    for(let i = 0; i < links.length; i++) {
-        links[i].onclick = function(event) {
+addEventListener("DOMContentLoaded", () => {
+    let linkElements = document.getElementsByClassName('img-grid')[0].getElementsByTagName('a');
+    for(let i = 0; i < linkElements.length; i++) {
+        linkElements[i].onclick = function(event) {
             event.preventDefault();
             createPhoto(this.getAttribute('href'));
         };
@@ -16,13 +16,16 @@ function createPhoto(link) {
         image = document.createElement('img'),
         faIcon = document.createElement('i'),
         aInfo = document.createElement('a');
+    let closeElements = [photoWrapper, button];
 
     // Define classes and variables
     photoWrapper.classList.add('photo-wrapper');
     faIcon.classList.add('fa-solid', 'fa-close', 'fa-2x');
     button.classList.add('photo-exit');
-    button.addEventListener('click', function() {
-        closeElement(photoWrapper);
+    closeElements.forEach(function(element) {
+        element.addEventListener("click", function() {
+            closeElement(photoWrapper);
+        });
     });
     image.src = link;
     image.alt = "Photo";
