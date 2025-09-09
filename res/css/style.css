@@ -36,13 +36,12 @@
     --color-text-inactive-page: rgba(0, 0, 0, 0.2);
     --color-text-active-page: rgba(10, 10, 10, 0.8);
     --color-photo-background: rgba(0, 0, 0, 0.4);
-    --color-photo-exit: white;
-    --color-photo-button-bg: rgba(0, 0, 0, 0.8);
-    --color-photo-button-bg-hover: rgba(15, 15, 15, 0.9);
-    --color-photo-button-border: black;
-    --color-photo-button-shadow: rgba(0, 0, 0, 0.8);
-    --color-photo-button-shadow-radius: 16px;
-}
+    --color-photo-exit: black;
+    --color-photo-button-bg: rgba(255, 255, 255, 0.8);
+    --color-photo-button-bg-hover: rgba(240, 240, 240, 0.9);
+    --color-photo-button-border: white;
+    --color-photo-button-shadow: rgba(255, 255, 255, 0.8);
+    --color-photo-button-shadow-radius: 16px;}
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
@@ -68,6 +67,11 @@
         --color-silk-link-background-hover: rgba(50, 50, 50, 0.75);
         --color-text-inactive-page: rgba(255, 255, 255, 0.2);
         --color-text-active-page: rgba(245, 245, 245, 0.8);
+        --color-photo-exit: white;
+        --color-photo-button-bg: rgba(0, 0, 0, 0.8);
+        --color-photo-button-bg-hover: rgba(15, 15, 15, 0.9);
+        --color-photo-button-border: black;
+        --color-photo-button-shadow: rgba(0, 0, 0, 0.8);
     }
 
     [data-theme="dark"] header img.logo-dark {

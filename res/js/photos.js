@@ -1,6 +1,6 @@
 // Showing photos
 addEventListener("DOMContentLoaded", (event) => {
-    const links = document.getElementsByTagName('a');
+    const links = document.getElementsByClassName('img-grid')[0].getElementsByTagName('a');
     for(let i = 0; i < links.length; i++) {
         links[i].onclick = function(event) {
             event.preventDefault();
