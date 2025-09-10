@@ -24,13 +24,12 @@ function createPhoto(link) {
     button.classList.add('photo-exit');
     closeElements.forEach(function(element) {
         element.addEventListener("click", function() {
-            closeElement(photoWrapper);
+            closeElement(element);
         });
     });
     image.src = link;
     image.alt = "Photo";
     aInfo.href = link;
-    elementZoom = image;
 
     // Add to main element
     button.prepend(faIcon);
@@ -44,7 +43,6 @@ function createPhoto(link) {
 function closeElement(element) { 
     if(element) {
         element.remove();
-        elementZoom = null;
         enableScrolling();
     }
 }
