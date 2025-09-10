@@ -1,4 +1,4 @@
-// Showing photos
+// Showing photos once content is loaded
 addEventListener("DOMContentLoaded", () => {
     let linkElements = document.getElementsByClassName('img-grid')[0].getElementsByTagName('a');
     for(let i = 0; i < linkElements.length; i++) {
