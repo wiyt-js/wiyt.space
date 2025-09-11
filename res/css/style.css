@@ -190,6 +190,17 @@ button.silk {
     transition: background-color 0.5s cubic-bezier(0, 0, 0, 1), border 0.5s cubic-bezier(0, 0, 0, 1), color 0.5s ease;
 }
 
+/* Section Notification */
+section.notification {
+    background-color: var(--color-silk-link-background);
+    padding: 0.25em 0 !important;
+}
+section.notification p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Link styling */
 a.silk-link {
     background-color: var(--color-silk-link-background);
