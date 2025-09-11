@@ -196,9 +196,7 @@ section.notification {
     padding: 0.25em 0 !important;
 }
 section.notification p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 /* Link styling */
