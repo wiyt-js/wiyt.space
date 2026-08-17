@@ -332,7 +332,6 @@ div.post a {
 
 /* Pages/Tile styling */
 section.banners {
-    align-content: center;
     height: 900px;
     max-height: 900px;
 }
