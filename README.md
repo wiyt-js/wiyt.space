@@ -5,6 +5,7 @@ Wiyt's GitHub Pages site, hosting links to videos and content produced for exhib
 ## Pages
 - [Home](https://wiyt.space/) | [index.html](https://github.com/wiyt-js/wiyt.space/blob/main/index.html)
 - [About Me](https://wiyt.space/about-me/) | [index.html](https://github.com/wiyt-js/wiyt.space/blob/main/about-me/index.html)
+- [Minecraft Server](https://wiyt.space/minecraft-server/) | [index.html](https://github.com/wiyt-js/wiyt.space/blob/main/minecraft-server/index.html)
 - [Projects](https://wiyt.space/projects/) | [index.html](https://github.com/wiyt-js/wiyt.space/blob/main/projects/index.html)
 - [Stream](https://wiyt.space/stream/) | [index.html](https://github.com/wiyt-js/wiyt.space/blob/main/stream/index.html)
 - [Blog](https://wiyt.space/blog/) | [index.html](https://github.com/wiyt-js/wiyt.space/blob/main/blog/index.html)
