@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Minecraft';
+  src: url('https://cdn.jsdelivr.net/gh/IdreesInc/Monocraft@main/dist/Monocraft-ttf/Monocraft.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.mc-font {
+  font-family: 'Minecraft', monospace;
+  padding: 0 2px 0 4px;
+}
+
 .cabin-regular,
 a, p, ol, ul, table {
     font-family: "Cabin", sans-serif;

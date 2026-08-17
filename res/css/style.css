@@ -333,8 +333,8 @@ div.post a {
 /* Pages/Tile styling */
 section.banners {
     align-content: center;
-    height: 694px;
-    max-height: 694px;
+    height: 900px;
+    max-height: 900px;
 }
 div.tile {
     opacity: 0;
@@ -490,13 +490,41 @@ h4 {
 }
 h4.project-title {
     text-align: center;
-    padding: 8px 0;
+}
+h4.mc-font {
+    background-color: var(--color-blue);
+    width: fit-content;
+    margin: 12px auto;
+    border-radius: 12px;
+    padding: 12px;
 }
 h3.blog-month {
     padding-bottom: 24px;
     color: var(--color-text-blog-month);
     font-size: 18px;
     transition: color 1.0s cubic-bezier(0, 0, 0, 1);
+}
+.mc-font, div.mc-skin p {
+    font-weight: bold;
+}
+a.mc-font:hover {
+    color: var(--color-blue);
+}
+
+/* Minecraft styling (Minotar) */
+div.mc-skin img {
+    width: 200px;
+}
+div.mc-skin {
+    width: fit-content;
+    image-rendering: pixelated;
+    text-align: center;
+    margin: auto;
+}
+div.mc-skin p {
+    background-color: var(--color-blue);
+    padding: 4px 0;
+    border-radius: 6px;
 }
 
 /* Footer styling */

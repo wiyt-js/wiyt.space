@@ -16,8 +16,8 @@
     inherits: false;
 }
 
-span.page a#banner-aboutme, span.page a#banner-projects, span.page a#banner-stream, span.page a#banner-blog,
-    [data-theme="dark"] span.page a#banner-aboutme, [data-theme="dark"] span.page a#banner-projects, [data-theme="dark"] span.page a#banner-stream, [data-theme="dark"] span.page a#banner-blog {
+span.page a#banner-aboutme, span.page a#banner-minecraftserver, span.page a#banner-projects, span.page a#banner-stream, span.page a#banner-blog,
+    [data-theme="dark"] span.page a#banner-aboutme, [data-theme="dark"] span.page a#banner-minecraftserver, [data-theme="dark"] span.page a#banner-projects, [data-theme="dark"] span.page a#banner-stream, [data-theme="dark"] span.page a#banner-blog {
     transition: background-image 3s cubic-bezier(0, 0, 0, 1), --blue-grad 3s cubic-bezier(0, 0, 0, 1),
         --dark-grad 3s cubic-bezier(0, 0, 0, 1), --light-grad 3s cubic-bezier(0, 0, 0, 1);
     -webkit-transition: background-image 3s cubic-bezier(0, 0, 0, 1), --blue-grad 3s cubic-bezier(0, 0, 0, 1),
@@ -28,10 +28,10 @@ span.page a#banner-aboutme, span.page a#banner-projects, span.page a#banner-stre
         --dark-grad 3s cubic-bezier(0, 0, 0, 1), --light-grad 3s cubic-bezier(0, 0, 0, 1);
     background-blend-mode: screen;
 }
-span.page a#banner-aboutme, span.page a#banner-projects, span.page a#banner-stream, span.page a#banner-blog {
+span.page a#banner-aboutme, span.page a#banner-minecraftserver, span.page a#banner-projects, span.page a#banner-stream, span.page a#banner-blog {
     --blue-grad: rgba(0,60,255,0.4);
 }
-[data-theme="dark"] span.page a#banner-aboutme, [data-theme="dark"] span.page a#banner-projects, [data-theme="dark"] span.page a#banner-stream, [data-theme="dark"] span.page a#banner-blog {
+[data-theme="dark"] span.page a#banner-aboutme, [data-theme="dark"] span.page a#banner-minecraftserver, [data-theme="dark"] span.page a#banner-projects, [data-theme="dark"] span.page a#banner-stream, [data-theme="dark"] span.page a#banner-blog {
     --dark-grad: rgba(0,60,255,0.1);
     --light-grad: rgba(255,255,255,0.3);
 }
@@ -41,6 +41,12 @@ span.page a#banner-aboutme {
     background-image: -moz-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/about-me.jpg');
     background-image: -o-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/about-me.jpg');
     background-image: linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/about-me.jpg');
+}
+span.page a#banner-minecraftserver {
+    background-image: -webkit-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/minecraft-server.jpg');
+    background-image: -moz-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/minecraft-server.jpg');
+    background-image: -o-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/minecraft-server.jpg');
+    background-image: linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/minecraft-server.jpg');
 }
 span.page a#banner-projects {
     background-image: -webkit-linear-gradient(0deg, var(--light-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/projects.jpg');

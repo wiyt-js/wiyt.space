@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Wiyt" name="author">
+        <meta content="Video editor, streamer and programmer" name="description"/>
+
+        <title>Wiyt - Minecraft Server</title>
+        <meta content="Wiyt - Projects" property="og:title"/>
+        <meta content="Video editor, streamer and programmer" property="og:description"/>
+        <meta content="https://wiyt.space/" property="og:url"/>
+        <meta content="website" property="og:type"/>
+        <meta content="../res/img/og-image.png" property="og:image"/>
+
+        <script>
+            (function () {
+                const theme = localStorage.getItem('theme') || 'light';
+                document.documentElement.setAttribute('data-theme', theme);
+            })();
+        </script>
+
+        <link rel="icon" href="../res/img/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="../res/css/google-fonts.css">
+        <link rel="stylesheet" href="../res/css/style.css">
+        <link rel="stylesheet" href="../res/css/fonts.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    </head>
+
+    <body>
+        <header class="fixed">
+            <a href="../"><img class="logo" src="../res/svg/wiyt.svg" alt="Wiyt"/><img class="logo-dark" src="../res/svg/wiyt-dark.svg" alt="Wiyt"/></a>
+            <span class="links">
+                <a class="link" href="../" id="home">
+                    <i class="fa-solid fa-home fa-2x" title="Home"></i>
+                </a>
+                <a class="link" href="https://www.youtube.com/@Wiyt">
+                    <i class="fa-brands fa-youtube fa-2x" title="YouTube"></i>
+                </a>
+                <a class="link" href="https://twitch.tv/wiyt_js">
+                    <i class="fa-brands fa-twitch fa-2x" title="Twitch"></i>
+                </a>
+                <a class="link" href="https://soundcloud.com/wiyt">
+                    <i class="fa-brands fa-soundcloud fa-2x" title="SoundCloud"></i>
+                </a>
+                <a class="link" href="https://www.deviantart.com/wisys">
+                    <i class="fa-brands fa-deviantart fa-2x" title="DeviantArt"></i>
+                </a>
+                <a class="link" id="theme-toggle">
+                    <i class="fa-solid fa-circle-half-stroke fa-2x" title="Theme"></i>
+                </a>
+            </span>
+        </header>
+
+        <div id="photos"></div>
+
+        <main>
+            <article>
+                <section>
+                    <div id="page-subtitle">
+                        <h1>General information</h1>
+                        <h2>Minecraft Server<a id="server" class="pilcrow" href="#server">&para;</a></h2>
+                    </div>
+                    <p>We have officially launched a whitelisted Minecraft server!</p>
+                    <p>Our Minecraft server is equipped with only the latest edition of <a href="https://papermc.io/" class="mc-font">PaperMC</a> and has crossplay compatibility via the <a href="https://geysermc.org/" class="mc-font">Geyser</a> plugin.</p>
+                    <p>If you're already whitelisted and would like to join:</p>
+                    <h4 class="project-title mc-font">play.wiyt.space</h4>
+                    <br>
+                    <h4 class="project-title"><span class="mc-font">Server Version: 26.2</span></h4>
+                    <h4 class="project-title"><span class="mc-font">Server Type: Whitelisted SMP</span></h4>
+                    <br>
+                    <p>If you would like to participate in the server and show you've got what it takes to play on the most chill server around, you can apply for the whitelist at:</p>
+                    <h4 class="project-title"><a class="mc-font" href="https://apply.wiyt.space" target="_blank">apply.wiyt.space</a></h4>
+                    <p>As more things happen on the server, the more this page will be updated with information and current events. Thank you so much for visiting and I hope to see you on the server!</p>
+                </section>
+                <section>
+                    <div id="page-subtitle">
+                        <h1>Codes of conduct while online</h1>
+                        <h2>Rules<a id="rules" class="pilcrow" href="#rules">&para;</a></h2>
+                    </div>
+                        <ol class="unselect" id="rules-list">
+                            <li>Be respectful towards all players.</li>
+                            <li>No cheating or griefing.</li>
+                            <li>All hate speech, racism, sexism, homophobia and personal hostility will not be tolerated and will result in a ban.</li>
+                            <li>No lag machines, AFK machines are okay.</li>
+                            <li>Harmless pranks and PvP are fine if both parties enjoy them, killing tamed pets will result in a ban.</li>
+                            <li>Staff has final say on any and all issues on the server.</li>
+                            <li>Please have fun!</li>
+                        </ol>
+                    </div>
+                </section>
+                <section>
+                    <div id="page-subtitle">
+                        <h1>Founder</h1>
+                        <h2>Administrator<a id="admin" class="pilcrow" href="#admin">&para;</a></h2>
+                    </div>
+                        <div class="mc-skin">
+                            <img src="https://minotar.net/cube/WiytSpace/200.png"/>
+                        <p>WiytSpace</p>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <footer>
+            <p>wiyt.space <span id="year">2026</span></p>
+        </footer>
+    </body>
+
+    <script src="../res/js/util.js" type="text/javascript"></script>
+</html>
