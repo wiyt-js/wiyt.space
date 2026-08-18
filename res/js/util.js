@@ -2,7 +2,8 @@
 const themeToggle = document.getElementById('theme-toggle'),
     mainElement = document.documentElement,
     savedTheme = localStorage.getItem('theme'),
-    hoverTitle = document.querySelector('a#theme-toggle i[title="Theme"]');
+    hoverTitle = document.querySelector('a#theme-toggle i[title="Theme"]'),
+    projectClick = document.getElementsByClassName('project-click');
 
 function toggleIcon(isDark) {
     if(isDark) {
@@ -17,6 +18,15 @@ function toggleIcon(isDark) {
 function setTheme(theme) {
     mainElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
+}
+
+async function copyTextToClipboard(text) {
+    try {
+        await navigator.clipboard.writeText(text);
+        console.log('Copied ' + text + ' to clipboard!');
+    } catch (err) {
+        console.error('Failed to copy text: ', err);
+    }
 }
 
 if(savedTheme) {
@@ -46,6 +56,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         document.querySelector(this.getAttribute("href")).scrollIntoView({
             behavior: "smooth"
         });
+    });
+});
+
+// Copy to clipboard
+Array.from(projectClick).forEach(element => {
+    element.addEventListener('click', function(event) {
+        copyTextToClipboard("play.wiyt.space");
     });
 });
 

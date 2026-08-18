@@ -490,6 +490,12 @@ h4 {
 h4.project-title {
     text-align: center;
 }
+h4.project-title span.mc-font {
+    font-size: 16px;
+}
+h4.project-click {
+    cursor: pointer;
+}
 h4.mc-font {
     background-color: var(--color-blue);
     width: fit-content;
