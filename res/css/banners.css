@@ -74,6 +74,12 @@ span.page a#banner-blog {
         background-image: -o-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/about-me.jpg');
         background-image: linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/about-me.jpg');
     }
+    [data-theme="dark"] span.page a#banner-minecraftserver {
+        background-image: -webkit-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/minecraft-server.jpg');
+        background-image: -moz-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/minecraft-server.jpg');
+        background-image: -o-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/minecraft-server.jpg');
+        background-image: linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/minecraft-server.jpg');
+    }
     [data-theme="dark"] span.page a#banner-projects {
         background-image: -webkit-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/projects.jpg');
         background-image: -moz-linear-gradient(0deg, var(--dark-grad) 0%, var(--blue-grad) 100%), url('../../res/img/banners/projects.jpg');
